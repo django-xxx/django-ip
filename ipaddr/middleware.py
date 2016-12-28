@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from django_six import MiddlewareMixin
-
 from ipaddr.clientip import client_ip
 
 
