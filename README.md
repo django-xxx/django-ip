@@ -27,7 +27,7 @@ Simple return user's real IP address in Django
   request.client_ip
 
   # Not Need Setting
-  from ipaadr import client_ip
+  from ipaddr import client_ip
   def xxx(request):
       ipaddr = client_ip(request)
   ```
