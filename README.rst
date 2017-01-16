@@ -1,5 +1,5 @@
 =========
-django-IP
+django-ip
 =========
 
 Simple return user's real IP address in Django
