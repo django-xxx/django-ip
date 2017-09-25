@@ -10,7 +10,7 @@ def check_ip(func=None, ip=None):
     def decorator(func):
         @wraps(func)
         def legal_ip(request, *args, **kwargs):
-            if ip and ip != client_ip(request):
+            if ip and client_ip(request) not in ip:
                 return HttpResponseForbidden()
             return func(request, *args, **kwargs)
         return legal_ip
